@@ -7,21 +7,29 @@ The database consists of 12 tables, broken down by 5 dimension tables (non-red c
 
 Based on [Kimball's definition](https://www.kimballgroup.com/2003/01/fact-tables-and-dimension-tables/) of dimension and fact tables, they are defined as shown:
 
-Dimensions - 
+**Dimensions** - They provide context such as "who, what, where, when, why and how" to an event or business process.
 
-Facts - 
+*Ex: What products have the highest sales?*
+
+**Facts** - Fact tables measure the result from an event or business process we want to track. They are also always numeric.
+
+*Ex: How much revenue do we have.*
+
+When combined together, **dimension tables provide context to the fact tables** to help us better understand the business metrics we're measuring.
+
+*Ex: What products brought in the highest revenue for Q1 this year?*
+
+_________________________________________________________________________________________________________________
 
 Some terminology to help understand this diagram:
 
-|: The line '|----' indicates that there is one unique value for each data point in the table. 
+**|**: The line **'|----'** indicates that there is **one unique value** for each data point in the table. 
 
-Ex: Each product_id has a unique identification code for the ecommerce platform to accurately identify the product's name, price, size and etc.   
+*Ex: Each product_id has a unique identification code for the ecommerce platform to accurately identify the product's name, price, size and etc.*
 
-O< or >O: Many
+**O< or >O:** The line **'O<---'** or **'--->O'** indicates that **each of the unique data points appear multiple times** in the table.
 
-The line 'O<---' or '--->O' indicates that each of the unique data points appear multiple times in the table.
-
-Ex: Each product_id in the ProductRatings can appear multiple times because one single product can be rated by different users throughout different time periods.
+*Ex: Each product_id in the ProductRatings can appear multiple times because one single product can be rated by different users throughout different time periods.*
 
 
 ## Database diagram
@@ -30,27 +38,27 @@ Ex: Each product_id in the ProductRatings can appear multiple times because one 
 
 For more clarity on the tables:
 
-- Dimension tables in this database will always have a 'one-to-many' relationship with Fact tables 
+- Dimension tables in this database will always have a **'one-to-many' relationship** with Fact tables 
 
-Ex: Users (one) -> ShoppingSessions (many)
+*Ex: Users (one) -> ShoppingSessions (many)*
 
 One user can browse through different product pages within a single web / mobile session.
 
-- Dimension tables can also have a 'one-to-many' relationship with another dimension table 
+- Dimension tables can also have a **'one-to-many' relationship** with another Dimension table. 
 
-Ex: ProductsCategory (one) -> Products
+*Ex: ProductsCategory (one) -> Products*
 
 One product category can appear multiple times within a product table because there are many products that within a single product category (i.e. shirts, pants, caps are considered as apparel or clothing).
 
-- Dimension tables that have a 'many-to-many' relationship is connected through a separate table. 
+- Dimension tables that have a **'many-to-many' relationship** is connected through a separate table. 
 
-Ex: ShopOwners (many) -> Shops (many)
+*Ex: ShopOwners (many) -> Shops (many)*
 
 For some ecommerce platforms, an online shop owner can have multiple shops. This is connected through the table 'ShopOwnerEntity' to link the two tables together.
 
-- Fact tables must have a 'one-to-many' relationship with another table if they are to connect with each other.
+- Fact tables must have a **'one-to-many' relationship** with another table if they are to connect with each other.
 
-Ex: Orders (one) -> OrderDetails (many)
+*Ex: Orders (one) -> OrderDetails (many)*
 
 An easy way to understand this is to think about the receipt you get after buying a number of items from a store.
 
