@@ -7,13 +7,16 @@ The database consists of 12 tables, broken down by 5 dimension tables (non-red c
 
 Based on [Kimball's definition](https://www.kimballgroup.com/2003/01/fact-tables-and-dimension-tables/) of dimension and fact tables, they are defined as shown:
 
+### Dimensions
 **Dimensions** - They provide context such as "who, what, where, when, why and how" to an event or business process.
 
 *Ex: What products have the highest sales?*
 
+### Facts
 **Facts** - Fact tables measure the result from an event or business process we want to track. They are also always numeric.
 
 *Ex: How much revenue do we have.*
+
 
 When combined together, **dimension tables provide context to the fact tables** to help us better understand the business metrics we're measuring.
 
@@ -24,9 +27,11 @@ ________________________________________________________________________________
 **Some terminology to help understand this diagram**
 
 **|**: The line **'|----'** indicates that there is **one unique value** for each data point in the table. 
+
 *Ex: Each product_id has a unique identification code for the ecommerce platform to accurately identify the product's name, price, size and etc.*
 
 **O< or >O:** The line **'O<---'** or **'--->O'** indicates that **each of the unique data points appear multiple times** in the table.
+
 *Ex: Each product_id in the ProductRatings can appear multiple times because one single product can be rated by different users throughout different time periods.*
 
 
