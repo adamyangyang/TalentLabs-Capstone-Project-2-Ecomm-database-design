@@ -43,7 +43,7 @@ This indicates that **each of the unique data points appear multiple times** in 
 <img width="800" alt="Data Model" src="https://raw.githubusercontent.com/adamyangyang/ecomm-db-design/main/ERD-eComm-db.png">
 
 
-**For more clarity on the tables:**
+### For more clarity on the tables:
 
 - Dimension tables in this database will always have a **'one-to-many' relationship** with Fact tables 
 
