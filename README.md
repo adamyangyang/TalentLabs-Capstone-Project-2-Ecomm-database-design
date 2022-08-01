@@ -5,7 +5,7 @@ This project involves designing an ecommerce database for an ecommerce marketpla
 
 The database consists of 12 tables, broken down by 5 dimension tables (non-red colors) and 8 fact tables (red colored).
 
-Based on Kimball's definition of dimension and fact tables, they are defined as shown:
+Based on [Kimball's definition](https://www.kimballgroup.com/2003/01/fact-tables-and-dimension-tables/) of dimension and fact tables, they are defined as shown:
 
 Dimensions - 
 
