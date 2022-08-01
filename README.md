@@ -46,7 +46,7 @@ This indicates that **each of the unique data points appear multiple times** in 
 ### For more clarity on the tables:
 
 #### 1) Dimension tables in this database will always have a 'one-to-many' relationship with Fact tables
-<img width="800" alt="Users and Shopping Sessions" src="https://raw.githubusercontent.com/adamyangyang/ecomm-db-design/main/images/user-shopping-sessions.PNG">
+<img width="300" alt="Users and Shopping Sessions" src="https://raw.githubusercontent.com/adamyangyang/ecomm-db-design/main/images/user-shopping-sessions.PNG">
 
 *Ex: Users (one) -> ShoppingSessions (many)*
 
