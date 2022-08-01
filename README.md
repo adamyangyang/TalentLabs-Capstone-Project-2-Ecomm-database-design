@@ -24,7 +24,7 @@ When combined together, **dimension tables provide context to the fact tables** 
 
 _________________________________________________________________________________________________________________
 
-**Some terminology to help understand this diagram**
+#### Some terminology to help understand this diagram
 
 **|**: The line **'|----'** indicates that there is **one unique value** for each data point in the table. 
 
