@@ -24,13 +24,15 @@ When combined together, **dimension tables provide context to the fact tables** 
 
 _________________________________________________________________________________________________________________
 
-#### Some terminology to help understand this diagram
+### Some terminology to help understand this diagram
 
-**|**: The line **'|----'** indicates that there is **one unique value** for each data point in the table. 
+**The line '|----'** 
+This indicates that there is **one unique value** for each data point in the table. 
 
 *Ex: Each product_id has a unique identification code for the ecommerce platform to accurately identify the product's name, price, size and etc.*
 
-**O< or >O:** The line **'O<---'** or **'--->O'** indicates that **each of the unique data points appear multiple times** in the table.
+**The line 'O<---'** or **'--->O'** 
+This indicates that **each of the unique data points appear multiple times** in the table.
 
 *Ex: Each product_id in the ProductRatings can appear multiple times because one single product can be rated by different users throughout different time periods.*
 
