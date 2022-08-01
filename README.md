@@ -3,17 +3,17 @@
 ## Overview
 This project involves designing an ecommerce database for an ecommerce marketplace (ex: Shopee, WooCommerce etc).
 
-The database consists of 12 tables, broken down by 5 dimension tables (non-red colors) and 8 fact tables (red colored).
+The database consists of **12 tables**, broken down by **5 dimension tables (non-red colors)** and **8 fact tables (red colored)**.
 
 Based on [Kimball's definition](https://www.kimballgroup.com/2003/01/fact-tables-and-dimension-tables/) of dimension and fact tables, they are defined as shown:
 
-### Dimensions
-**Dimensions** - They provide context such as "who, what, where, when, why and how" to an event or business process.
+### Dimension Tables
+They provide context such as "who, what, where, when, why and how" to an event or business process.
 
 *Ex: What products have the highest sales?*
 
-### Facts
-**Facts** - Fact tables measure the result from an event or business process we want to track. They are also always numeric.
+### Fact Tables
+They measure the result from an event or business process we want to track. They are also always numeric.
 
 *Ex: How much revenue do we have.*
 
