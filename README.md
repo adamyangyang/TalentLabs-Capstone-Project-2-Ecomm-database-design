@@ -25,7 +25,7 @@ Ex: Each product_id in the ProductRatings can appear multiple times because one 
 
 
 ## Database diagram
-
+<img width="800" alt="Data Model" src="https://raw.githubusercontent.com/adamyangyang/ecomm-db-design/main/ERD-eComm-db.png">
 
 
 For more clarity on the tables:
