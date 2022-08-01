@@ -45,27 +45,31 @@ This indicates that **each of the unique data points appear multiple times** in 
 
 ### For more clarity on the tables:
 
-#### Dimension tables in this database will always have a 'one-to-many' relationship with Fact tables 
+#### 1) Dimension tables in this database will always have a 'one-to-many' relationship with Fact tables 
 
 *Ex: Users (one) -> ShoppingSessions (many)*
 
 One user can browse through different product pages within a single web / mobile session.
 
 
-#### Dimension tables can also have a 'one-to-many' relationship with another Dimension table. 
+
+#### 2) Dimension tables can also have a 'one-to-many' relationship with another Dimension table. 
 
 *Ex: ProductsCategory (one) -> Products*
 
 One product category can appear multiple times within a product table because there are many products that within a single product category (i.e. shirts, pants, caps are considered as apparel or clothing).
 
 
-- Dimension tables that have a **'many-to-many' relationship** is connected through a separate table. 
+
+#### 3) Dimension tables that have a **'many-to-many' relationship** is connected through a separate table. 
 
 *Ex: ShopOwners (many) -> Shops (many)*
 
 For some ecommerce platforms, an online shop owner can have multiple shops. This is connected through the table 'ShopOwnerEntity' to link the two tables together.
 
-- Fact tables must have a **'one-to-many' relationship** with another table if they are to connect with each other.
+
+
+#### 4) Fact tables must have a **'one-to-many' relationship** with another table if they are to connect with each other.
 
 *Ex: Orders (one) -> OrderDetails (many)*
 
