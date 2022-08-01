@@ -68,7 +68,7 @@ One product category can appear multiple times within a product table because th
 
 *Ex: ShopOwners (many) -> Shops (many)*
 
-For some ecommerce platforms, an online shop owner can have multiple shops. This is connected through the table 'ShopOwnerEntity' to link the two tables together.
+For some ecommerce platforms, an online shop owner can have multiple shops. Similarly, one shop can also have multiple shop owners. This relatonship is connected through the table 'ShopOwnerEntity' to link the two tables together so the ecommerce platform can identify how many shops a user owns or how many owners are there for a single shop.
 
 
 
