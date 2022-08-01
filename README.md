@@ -55,7 +55,7 @@ One user can browse through different product pages within a single web / mobile
 
 
 #### 2) Dimension tables can also have a 'one-to-many' relationship with another Dimension table. 
-<img width="150" alt="Product and Product Categories" src="https://raw.githubusercontent.com/adamyangyang/ecomm-db-design/main/images/products-category.PNG">
+<img width="300" alt="Product and Product Categories" src="https://raw.githubusercontent.com/adamyangyang/ecomm-db-design/main/images/products-category.PNG">
 
 *Ex: ProductsCategory (one) -> Products*
 
@@ -64,7 +64,7 @@ One product category can appear multiple times within a product table because th
 
 
 #### 3) Dimension tables that have a **'many-to-many' relationship** is connected through a separate table. 
-<img width="150" alt="Multiple Shop Owners" src="https://raw.githubusercontent.com/adamyangyang/ecomm-db-design/main/images/multiple-shop-owners.PNG">
+<img width="300" alt="Multiple Shop Owners" src="https://raw.githubusercontent.com/adamyangyang/ecomm-db-design/main/images/multiple-shop-owners.PNG">
 
 *Ex: ShopOwners (many) -> Shops (many)*
 
@@ -73,7 +73,7 @@ For some ecommerce platforms, an online shop owner can have multiple shops. This
 
 
 #### 4) Fact tables must have a **'one-to-many' relationship** with another table if they are to connect with each other.
-<img width="150" alt="Orders and OrderDetails" src="https://raw.githubusercontent.com/adamyangyang/ecomm-db-design/main/images/order-details.PNG">
+<img width="300" alt="Orders and OrderDetails" src="https://raw.githubusercontent.com/adamyangyang/ecomm-db-design/main/images/order-details.PNG">
 
 *Ex: Orders (one) -> OrderDetails (many)*
 
